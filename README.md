@@ -25,3 +25,4 @@
 - nvm install --lts
 - yarn global add serve
 - serve -s build
+- source gh-pages branch > README.md 가 아닌 index.html 보여줘야한다.ㄴ
