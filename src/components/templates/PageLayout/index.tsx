@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Layout } from "antd";
 import {
   StyledPageLayout,
@@ -9,18 +9,31 @@ import {
   StyledBreadcrumb,
 } from "./Styled";
 import StyledMenu from "../SideMenu";
-import { LikeOutlined } from "@ant-design/icons";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 
 function PageLayout() {
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
     <StyledPageLayout>
       <StyledHeader>
         <h1>
-          <LikeOutlined /> Bette's Blog
+          {React.createElement(
+            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+            {
+              style: {
+                position: "absolute",
+                top: 25,
+                left: 15,
+              },
+              onClick: () => setCollapsed(!collapsed),
+            }
+          )}
+          Bette's Blog
         </h1>
       </StyledHeader>
       <Layout>
-        <StyledSider>
+        <StyledSider trigger={null} collapsible collapsed={collapsed}>
           <StyledMenu />
         </StyledSider>
         <Layout>

@@ -15,10 +15,16 @@ export const StyledHeader = styled(Header)`
     opacity: 0.85;
     font-weight: 400;
     font-size: 15px;
+    padding-left: 20px;
   }
 `;
 export const StyledSider = styled(Sider)`
   background: transparent;
+  &.ant-layout-sider-collapsed {
+    width: 40px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+  }
 `;
 export const StyledBreadcrumb = styled(Breadcrumb)`
   margin: 10px 20px;
