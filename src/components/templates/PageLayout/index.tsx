@@ -1,25 +1,41 @@
 import React from "react";
+import { Layout } from "antd";
 import {
-  StyledLayout,
+  StyledPageLayout,
   StyledHeader,
   StyledSider,
   StyledContent,
   StyledFooter,
+  StyledBreadcrumb,
 } from "./Styled";
 import StyledMenu from "../SideMenu";
+import { LikeOutlined } from "@ant-design/icons";
 
 function PageLayout() {
   return (
-    <StyledLayout>
-      <StyledHeader>Bette's Blog</StyledHeader>
-      <StyledLayout>
+    <StyledPageLayout>
+      <StyledHeader>
+        <h1>
+          <LikeOutlined /> Bette's Blog
+        </h1>
+      </StyledHeader>
+      <Layout>
         <StyledSider>
           <StyledMenu />
         </StyledSider>
-        <StyledContent>Content</StyledContent>
-      </StyledLayout>
-      <StyledFooter>Footer</StyledFooter>
-    </StyledLayout>
+        <Layout>
+          <StyledBreadcrumb>
+            <StyledBreadcrumb.Item>Home</StyledBreadcrumb.Item>
+            <StyledBreadcrumb.Item>List</StyledBreadcrumb.Item>
+            <StyledBreadcrumb.Item>Title</StyledBreadcrumb.Item>
+          </StyledBreadcrumb>
+          <StyledContent>Content</StyledContent>
+        </Layout>
+      </Layout>
+      <StyledFooter>
+        Copyrightⓒ2008 bettehub.github.io All rights reserved.
+      </StyledFooter>
+    </StyledPageLayout>
   );
 }
 
