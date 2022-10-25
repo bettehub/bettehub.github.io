@@ -29,7 +29,7 @@ function PageLayout() {
               onClick: () => setCollapsed(!collapsed),
             }
           )}
-          Bette's Blog
+          bette's blog
         </h1>
       </StyledHeader>
       <Layout>
