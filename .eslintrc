@@ -1,0 +1,23 @@
+{
+  "extends": ["react-app", "eslint:recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/exhaustive-deps": "off",
+    /**
+     * https://eslint.org/docs/rules/{rule_names}
+     */
+    "no-console": ["off"],
+    "no-debugger": ["off"],
+    "no-unused-vars": ["off"]
+  }
+}

@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from 'react'
-import { StyledButton, StyledResisterButton } from './Styled'
+import { StyledResisterButton } from './Styled'
 
 const Button = ({ children, type, onClick }: ButtonProps) => {
   return (

@@ -1,5 +1,5 @@
-import React, { memo } from "react";
-import { StyledBreadcrumb } from "./Styled";
+import React, { memo } from 'react'
+import { StyledBreadcrumb } from './Styled'
 
 const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
   return (
@@ -8,11 +8,11 @@ const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
         <StyledBreadcrumb.Item key={idx}>{item}</StyledBreadcrumb.Item>
       ))}
     </StyledBreadcrumb>
-  );
-};
+  )
+}
 
 type BreadcrumbProps = {
-  breadcrumb: string[];
-};
+  breadcrumb: string[]
+}
 
-export default memo(Breadcrumb);
+export default memo(Breadcrumb)

@@ -1,6 +1,6 @@
-import React, { memo, ReactNode } from "react";
-import { StyledPageContent, StyledContent } from "./Styled";
-import Breadcrumb from "../BreadCrumb";
+import React, { memo, ReactNode } from 'react'
+import { StyledPageContent, StyledContent } from './Styled'
+import Breadcrumb from '../BreadCrumb'
 
 const PageContent = ({ children, breadcrumb }: PageContentProps) => {
   return (
@@ -8,12 +8,12 @@ const PageContent = ({ children, breadcrumb }: PageContentProps) => {
       <Breadcrumb breadcrumb={breadcrumb} />
       <StyledContent>{children}</StyledContent>
     </StyledPageContent>
-  );
-};
+  )
+}
 
 type PageContentProps = {
-  breadcrumb: string[];
-  children: ReactNode;
-};
+  breadcrumb: string[]
+  children: ReactNode
+}
 
-export default memo(PageContent);
+export default memo(PageContent)

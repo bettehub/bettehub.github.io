@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Layout } from "antd";
+import styled from 'styled-components'
+import { Layout } from 'antd'
 
-const { Header } = Layout;
+const { Header } = Layout
 
 export const StyledHeader = styled(Header)`
   padding: 0 20px;
@@ -21,4 +21,4 @@ export const StyledHeader = styled(Header)`
     top: 0px;
     left: 45px;
   }
-`;
+`
