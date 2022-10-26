@@ -29,6 +29,9 @@
 
 ### 2022-10-25
 
+[O] editor
 [] route
 [] resolve
-[] editor
+[] eslint
+[] prettier
+[] husky
