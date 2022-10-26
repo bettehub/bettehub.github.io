@@ -30,8 +30,8 @@
 ### 2022-10-25
 
 [O] editor
-[] route
+[O] prettier
+[O] eslint
 [] resolve
-[] eslint
-[] prettier
 [] husky
+[] route
